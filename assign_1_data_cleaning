@@ -1,0 +1,79 @@
+---
+title: "Assignment1_R2_fall2025"
+author: "Rob"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r loading package, echo=TRUE, include=FALSE}
+library(dplyr)
+
+```
+
+```{r read file, echo=TRUE, include=FALSE}
+api_journal_1 <- read.csv("api_journal11-13-17.csv")
+
+```
+
+```{r  echo=TRUE, include=TRUE}
+head(api_journal_1)
+tail(api_journal_1)
+dim(api_journal_1)
+```
+
+```{r  viewing data, echo=TRUE, include=TRUE}
+glimpse(api_journal_1)
+
+```
+
+
+```{r  viewing data, echo=TRUE, include=TRUE}
+
+summary(api_journal_1)
+```
+
+
+```{r Identify numeric , echo=TRUE, include=TRuE}
+any(is.numeric(api_journal_1))
+```
+
+```{r Identifyd categorical variables, echo=TRUE, include=TRUE}
+any(is.factor(api_journal_1))
+```
+
+########## api_price #########
+
+```{r read file, echo=TRUE, include=TRUE}
+api_price_1 <- read.csv("api_price11-13-17.csv")
+
+```
+
+```{r  viewing data, echo=TRUE, include=TRUE}
+head(api_price_1)
+tail(api_price_1)
+dim(api_price_1)
+```
+
+```{r  viewing data, echo=TRUE, include=TRUE}
+glimpse(api_price_1)
+
+```
+
+
+```{r  viewing data, echo=TRUE, include=TRUE}
+
+summary(api_price_1)
+```
+
+
+```{r Identify numeric , echo=TRUE, include=TRuE}
+any(is.numeric(api_price_1))
+```
+
+```{r Identifyd categorical variables, echo=TRUE, include=TRUE}
+any(is.factor(api_price_1))
+```
+
+```{r Identifyd categorical variables, echo=TRUE, include=TRUE}
+any(is.character(api_price_1))
+```
